@@ -21,10 +21,6 @@ from pid_controller import LaneKeepingController
 
 
 class AutonomousDriver:
-    """
-    Main autonomous driving system that integrates perception and control.
-    """
-    
     def __init__(self):
         self.detector = AdvancedLaneDetector()
         
@@ -85,8 +81,7 @@ class AutonomousDriver:
         print("\nControls:")
         print("  [E] - Toggle autonomous mode ON/OFF")
         print("  [Q] - Quit")
-        print("\nWaiting for you to start driving in slowroads.io...")
-        print("Press 'E' when ready to enable autonomous control.\n")
+        print("Press 'E' to enable autonomous control.\n")
         
         time.sleep(5)
         

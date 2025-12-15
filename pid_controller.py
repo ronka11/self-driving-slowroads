@@ -92,6 +92,7 @@ class LaneKeepingController:
             if key in self.current_keys_pressed:
                 self.keyboard.release(key)
         self.current_keys_pressed.clear()
+        print("Released all keys")
 
     def press_key(self, key):
         if key not in self.current_keys_pressed:
@@ -109,15 +110,19 @@ class LaneKeepingController:
         if abs(steering_output) < dead_zone:
             self.release_key('a')
             self.release_key('d')
+            print("Less than dead zone")
         elif steering_output < -dead_zone:
             self.release_key('d')
             self.press_key('a')
+            print("Turning Left")
         else:
             self.release_key('a')
-            self.press_key('a')
+            self.press_key('d')
+            print("Turning Right")
 
     def apply_throttle(self, curvature=None):
         self.press_key('w')
+        print("Applying Throttle")
 
     def update(self, lateral_offset, curvature=None, lane_detected=True):
         if not self.control_enabled or not lane_detected:

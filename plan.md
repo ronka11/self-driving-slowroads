@@ -11,12 +11,12 @@ Control a self driving car using AI in GTAV ingame
 1. - [x] find an online game to use to test -> slowroads.io
 2. - [x] capture screen using python
 3. - [x] control online game car using python
-4. - [ ] control movement from editor to control online car game
+4. - [x] control movement from editor to control online car game
 
 ### 3.apply AI
-1. - [ ] learn/revise fundamentals
-2. - [ ] learn relevant self driving stuff
-3. - [ ] apply it on online game car
+1. - [x] learn/revise fundamentals
+2. - [x] learn relevant self driving stuff
+3. - [x] apply it on online game car
 
 ### 4. GTAV 
 1. - [ ] capture data from gtaV
