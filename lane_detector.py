@@ -444,7 +444,7 @@ def main():
             result_resized = cv2.resize(result, (display_width, display_height))
             cv2.putText(result_resized, f'FPS: {fps:.1f}', (display_width - 120, 30),
                         cv2.FONT_HERSHEY_SIMPLEX, 0.6, (0, 255, 255), 2)
-            cv2.imshow('Lane Detection Result', result_resized) # Renamed window
+            cv2.imshow('Lane Detection Result', result_resized)
             
             # Binary threshold
             binary_display = cv2.resize(binary * 255, (display_width, display_height))
